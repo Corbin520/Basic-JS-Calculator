@@ -1,0 +1,44 @@
+body {
+    background-image: url("../images/catchinup.jpg")
+}
+
+.main-content {
+    text-align: center;   
+}
+
+#submit-button {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: gray;
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+}
+
+#input-box, #input-box2 {
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    border-radius: 10px;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: bold
+}
+
+#plus, #subtract,
+#multiply, #divide {
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    border-radius: 10px;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
