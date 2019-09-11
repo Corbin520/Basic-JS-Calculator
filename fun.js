@@ -2,6 +2,8 @@
 const firstNumber = []
 const secondNumber = []
 
+var resultsText = document.getElementById("result")
+
 // build out on click event for the button
 $("#submit-button").on("click", function() {
 
@@ -14,18 +16,36 @@ $("#submit-button").on("click", function() {
     firstNumber.push(inputValue)
     secondNumber.push(inputValue2)
     
-    
-    // add()
     console.log(firstNumber + secondNumber)
+    resultsText.textContent = "Result: " + firstNumber + secondNumber;
 })
 
-function add() {
 
-    // make the number at each index + together
-    for (var i = 0; i < numbers.length; i++) {
-        console.log(numbers[i] + numbers[i])
-    }
+// get the numbers to display on the screen
+
+function puls() {
+    // a + b
 }
+
+function minus() {
+    // a - b
+}
+
+function divide() {
+    // a / b
+}
+
+function multiply() {
+    // a * b
+}
+
+function clear() {
+    // clear fields
+}
+
+
+
+
 
 // Building a calculator 
 
@@ -33,7 +53,7 @@ function add() {
         // plus
         // minus
         // divide
-        // subtract
+        // multiply
 
     // How will we get it to work?
         // we need to create a function for each math type 
