@@ -13,22 +13,17 @@ $("#submit-button").on("click", function () {
     var inputValue = $("#input-box").val().trim()
     var inputValue2 = $("#input-box2").val().trim()
 
-    // Showing the values
-    console.log("Input Box One: " + inputValue)
-    console.log("Input Box Two: " + inputValue2)
-
-
     // pushing the value of the input(s) to the arrays
     firstNumber.push(inputValue)
     secondNumber.push(inputValue2)
 
-    console.log(firstNumber[0] + secondNumber[0])
+    // loging our math to the console
+    console.log(firstNumber[0] / secondNumber[0])
 
     // console.log(firstNumber + secondNumber)
     resultsText.textContent = "Result: " + firstNumber + secondNumber;
 
-    divide()
-
+    
     // switch statement
     // switch (asdf) {
     //     // ex: // switch (new Date().getDay())
@@ -56,25 +51,24 @@ $("#submit-button").on("click", function () {
 })
 
 
-// get the numbers to display on the screen
-
+// functions that will handle all of the math for each button
 function plus() {
-    firstNumber + secondNumber
+    firstNumber[0] + secondNumber[0]
     console.log("Plus Button clicked")
 }
 
 function minus() {
-    firstNumber - secondNumber
+    firstNumber[0] - secondNumber[0]
     console.log("Minus Button Clicked")
 }
 
 function divide() {
-    firstNumber / secondNumber
+    firstNumber[0] / secondNumber[0]
     console.log("Divide Button clicked.....")
 }
 
 function multiply() {
-    firstNumber * secondNumber
+    firstNumber[0] * secondNumber[0]
     console.log("Multiply Button Clicked")
 }
 
@@ -82,4 +76,3 @@ function clear() {
     // set value back to 0
     console.log("Clear Button Clicked")
 }
-
