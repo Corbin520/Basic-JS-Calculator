@@ -1,82 +1,85 @@
+
+// Global Variables
 const firstNumber = []
 const secondNumber = []
 
+// bringing in the HTML
 var resultsText = document.getElementById("result")
 
-// build out on click event for the button
+// On button click, run this code
 $("#submit-button").on("click", function () {
 
-    // on the click, get the value of whats in the input box
+    // get val() of input(s)
     var inputValue = $("#input-box").val().trim()
     var inputValue2 = $("#input-box2").val().trim()
 
-    // show value response
+    // Showing the values
+    console.log("Input Box One: " + inputValue)
+    console.log("Input Box Two: " + inputValue2)
 
+
+    // pushing the value of the input(s) to the arrays
     firstNumber.push(inputValue)
     secondNumber.push(inputValue2)
 
-    console.log(firstNumber + secondNumber)
+    console.log(firstNumber[0] + secondNumber[0])
+
+    // console.log(firstNumber + secondNumber)
     resultsText.textContent = "Result: " + firstNumber + secondNumber;
+
+    divide()
+
+    // switch statement
+    // switch (asdf) {
+    //     // ex: // switch (new Date().getDay())
+        
+    //     case "plus":
+    //         plus()
+    //     break;
+    
+    //     case "minus":
+    //         minus()
+    //     break;
+    
+    //     case "divide": 
+    //         divide()
+    //     break;
+    
+    //     case "multiply":
+    //         multiply()
+    //     break;
+    
+    //     case "clear":
+    //         clear()
+    //     break;
+    // }
 })
 
 
 // get the numbers to display on the screen
 
 function plus() {
-    // a + b
+    firstNumber + secondNumber
+    console.log("Plus Button clicked")
 }
 
 function minus() {
-    // a - b
+    firstNumber - secondNumber
+    console.log("Minus Button Clicked")
 }
 
 function divide() {
-    // a / b
+    firstNumber / secondNumber
+    console.log("Divide Button clicked.....")
 }
 
 function multiply() {
-    // a * b
+    firstNumber * secondNumber
+    console.log("Multiply Button Clicked")
 }
 
 function clear() {
-    // clear fields
+    // set value back to 0
+    console.log("Clear Button Clicked")
 }
 
-
-switch (asdf) {
-
-    case "plus":
-        plus()
-    break;
-
-    case "minus":
-        minus()
-    break;
-
-    case "divide": 
-        divide()
-    break;
-
-    case "multiply":
-        multiply()
-    break;
-
-    case "clear":
-        clear()
-    break;
-}
-
-
-// Building a calculator 
-
-// what we have:
-// plus
-// minus
-// divide
-// multiply
-
-// How will we get it to work?
-// we need to create a function for each math type 
-
-// we will handle the math part by a switch statement
-// 
