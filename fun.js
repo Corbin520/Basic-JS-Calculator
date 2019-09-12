@@ -6,7 +6,7 @@ const secondNumber = []
 var resultsText = document.getElementById("result")
 
 function resetResults() {
-    //  build out a function that will clear our results
+
     location.reload()
 }
 
@@ -90,17 +90,6 @@ $("#divide").on("click", function () {
 $("#clear").on("click", function () {
     resetResults()
 })
-
-
-
-
-
-
-
-
-
-
-
 
 
 var TxtRotate = function(el, toRotate, period) {
