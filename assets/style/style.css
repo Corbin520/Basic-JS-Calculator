@@ -1,5 +1,7 @@
 body {
-    background-image: url("../images/catchinup.jpg")
+    background-image: url("../images/catchinup.jpg");
+    background-size: 100%;
+    height: auto;
 }
 
 .main-content {

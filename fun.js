@@ -10,6 +10,8 @@ function resetResults() {
     location.reload()
 }
 
+$("#clear").hide()
+
 // Plus Click Event
 $("#plus").on("click", function () {
     
@@ -19,7 +21,7 @@ $("#plus").on("click", function () {
     firstNumber.push(inputValue)
     secondNumber.push(inputValue2)
     
-    resultsText.textContent = firstNumber + secondNumber;
+    resultsText.textContent = +firstNumber + +secondNumber;
 
     $("#clear").show()
     $("#plus").hide()
@@ -89,8 +91,16 @@ $("#clear").on("click", function () {
     resetResults()
 })
 
-// 
-$("#clear").hide()
+
+
+
+
+
+
+
+
+
+
 
 
 var TxtRotate = function(el, toRotate, period) {
