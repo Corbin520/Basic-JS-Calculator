@@ -29,11 +29,23 @@ body {
 
 h1 {
     font-size: 40px;
-    font-weight: bold
+    font-weight: bold;
+    text-align: center;
+    text-decoration: underline black;
 }
 
 #plus, #minus,
-#multiply, #divide,
+#multiply, #divide {
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    border-radius: 10px;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    width: 72px;
+}
+
 #clear {
     border-style: solid;
     border-width: 2px;
@@ -42,4 +54,13 @@ h1 {
     font-size: 30px;
     text-align: center;
     margin-bottom: 20px;
+    width: 115px;
 }
+
+#result {
+    font-family: 'Lobster Two', cursive;
+    font-weight: bold;
+    font-size: 80px;
+    text-decoration: underline white
+}
+
