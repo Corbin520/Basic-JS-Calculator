@@ -1,16 +1,12 @@
 
-// Global Variables
+// Global Arrays
 const firstNumber = []
 const secondNumber = []
-
-// bringing in the HTML
-var resultsText = document.getElementById("result")
 
 function resetResults() {
     //  build out a function that will clear our results
     location.reload()
 }
-
 
 // Plus Click Event
 $("#plus").on("click", function () {
@@ -60,14 +56,10 @@ $("#divide").on("click", function () {
     
     console.log(firstNumber / secondNumber)
     resultsText.textContent = "Result: " + firstNumber / secondNumber;
-
 })
-
 
 // Clear Click Event
 $("#clear").on("click", function () {
-
     resetResults()
-    console.log("Clear button pushed.....")
 })
 
